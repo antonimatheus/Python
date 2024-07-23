@@ -1,9 +1,9 @@
 import random
 import time
 
-print('-=' * 10)
+print('-=' * 25)
 print("Vou pensar em um número de 0 a 5. Tente advinhar...")
-print('-=' * 10)
+print('-=' * 25)
 
 numeroEscolha = int(input('Qual o número que eu estou pensando? '))
 numeroComputador = random.randint(0, 5)
@@ -15,8 +15,6 @@ else:
     time.sleep(2)
 
     if numeroEscolha > numeroComputador:
-        print(f'PARABÈNS, você conseguiu me vencer!')
+        print(f'PARABÈNS! Você conseguiu me vencer!')
     else:
-        print(f'GANHEI! Você errou o número que eu pensei!')
-
-    print(f'Número que pensei: {numeroComputador}, número dado: {numeroEscolha}.')
+        print(f'GANHEI! Pensei no {numeroComputador} não no {numeroEscolha}!')
